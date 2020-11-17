@@ -1,5 +1,6 @@
 package com.bearomance.helloworld.controller;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.bearomance.helloworld.model.User;
 import com.bearomance.helloworld.model.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ public class TestController {
     @GetMapping("/t1")
     public String t1() {
         List<User> users = userMapper.selectList(null);
+        Page<User> page = new Page<>(1, 1);
+        Page<User> userPage = userMapper.selectPage(page, null);
         return "Hello Bear";
     }
 }
