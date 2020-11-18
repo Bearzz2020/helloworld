@@ -1,7 +1,7 @@
 package com.bearomance.helloworld.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.bearomance.helloworld.model.User;
+import com.bearomance.helloworld.model.entity.User;
 import com.bearomance.helloworld.model.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

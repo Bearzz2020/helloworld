@@ -1,4 +1,4 @@
-package com.bearomance.helloworld.model;
+package com.bearomance.helloworld.model.entity;
 
 import lombok.Data;
 
